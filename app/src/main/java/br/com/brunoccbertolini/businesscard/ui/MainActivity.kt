@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import br.com.brunoccbertolini.businesscard.App
 import br.com.brunoccbertolini.businesscard.R
 import br.com.brunoccbertolini.businesscard.databinding.ActivityMainBinding
+import br.com.brunoccbertolini.businesscard.util.Image
 
 class MainActivity : AppCompatActivity() {
 
@@ -32,6 +33,9 @@ class MainActivity : AppCompatActivity() {
         viewBinding.fabAdd.setOnClickListener {
             val intent = Intent (this@MainActivity, AddBusinessCard::class.java)
             startActivity(intent)
+        }
+        adapter.listenerShare = { card ->
+            Image.share(this@MainActivity, card)
         }
     }
 

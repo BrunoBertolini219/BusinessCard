@@ -2,4 +2,5 @@
     <string name="app_name">BusinessCard</string>
     <string name="cart_o_de_visitas">Cartão de Visitas</string>
     <string name="label_show_success">Cartão Cadastrado!</string>
+    <string name="label_share">Compartilhar</string>
 </resources>
